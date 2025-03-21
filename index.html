@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,7 +8,8 @@
     <title>Ford</title>    
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/carousel.js" defer ></script>
+    <script src="js/carousel.js"></script>
+
 </head>
 <body>
     <header>       
@@ -30,29 +32,11 @@
 
     </header>
     <main>
-        <div id="carousel" class="carousel-container">
-            <div class="carousel">
-                <div class="carousel-item">
-                    <img src="img/imagem_1.jpg" alt="Ford Ranger 2022" />
-                </div>
-                <div class="carousel-item">
-                    <img src="img/imagem_2.jpg" alt="Ford História" />
-                </div>
-                <div class="carousel-item">
-                    <img src="img/imagem_3.jpg" alt="Ford Bronco Sport 2022" />
-                </div>
-                
-            </div>
+        <div id="carousel">
         </div>
         <div id="carousel-title">
         </div>
-        <script>
-             //insert each image on carousel
-            carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
-            carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","#"));
-            carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
-            Carousel.Start(carouselArr);
-        </script>
+        <script src="js/carousel.js"></script>
     </main>
     <footer>
         <nav id="social">
@@ -66,6 +50,13 @@
         <div>
            <img src="img/ford-96.png" width="70"  />
         </div>
-    </footer>    
+    </footer> 
+    <script>
+        //insert each image on carousel
+       carouselArr.push(new Carousel("./img/imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
+       carouselArr.push(new Carousel("./img/imagem_2.jpg","Ford a nossa história","#"));
+       carouselArr.push(new Carousel("./img/imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
+       Carousel.Start(carouselArr);
+   </script>  
 </body>
 </html>
