@@ -1,0 +1,22 @@
+@media screen and (max-width: 1000px){
+    #carousel a img{
+        position: relative;
+        max-width: 10vw;
+        height: auto;
+    }
+    div#carousel{
+        height: min-content;
+    }
+    #carousel-title{
+        font-size: 4vw;
+    }
+    header div img{
+        width: 70px;
+    }
+    header nav{
+        scale: 0.7;
+        left: 50%;
+        top: 50;
+        transform: translate(-50%, -50%);
+    }
+}
