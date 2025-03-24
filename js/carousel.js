@@ -26,7 +26,8 @@ class Carousel {
                 const imgElement = document.createElement("img");
                 imgElement.src = item.imagem;
                 imgElement.alt = item.titulo;
-                imgElement.style.opacity = "0";
+                imgElement.style.display = "none";
+                
                 if (index === 0) imgElement.classList.add("active");
                 this._carouselElement.appendChild(imgElement);
             });
