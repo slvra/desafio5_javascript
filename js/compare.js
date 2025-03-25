@@ -6,7 +6,17 @@ class Car {
    
 
     constructor(nome, preco, alturaCacamba, alturaVeiculo, alturaSolo, capacidadeCarga, motor, potencia, volumeCacamba, roda, image){
-       
+       this.nome = nome;
+       this.preco = preco;
+       this.alturaCacamba = alturaCacamba;
+       this.alturaVeiculo = alturaVeiculo;
+       this.alturaSolo = alturaSolo;
+       this.capacidadeCarga = capacidadeCarga;
+       this.motor = motor;
+       this.potencia = potencia;
+       this.volumeCacamba = volumeCacamba;
+       this.roda = roda;
+       this.image = image;
     }
 } 
 
@@ -20,13 +30,13 @@ function GetCarArrPosition(arr, carClass) {
 }
 
 function SetCarToCompare(el, carClass) {
-   
+    
     if(carClass instanceof Car){       
         if(el.checked){
-                
+            
             
         } else {
-          
+            
         } 
     } else {
         throw "You need set a Car Class";
@@ -38,7 +48,7 @@ function ShowCompare() {
         alert("Precisa marcar 2 carros para apresentar a comparação");
         return;
     }
-
+    
     UpdateCompareTable();
     document.getElementById("compare").style.display = "block";
 }
