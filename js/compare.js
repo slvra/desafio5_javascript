@@ -29,19 +29,6 @@ function GetCarArrPosition(arr, carClass) {
     return -1;
 }
 
-function SetCarToCompare(el, carClass) {
-    
-    if(carClass instanceof Car){       
-        if(el.checked){
-            
-            
-        } else {
-            
-        } 
-    } else {
-        throw "You need set a Car Class";
-    }
-}
 
 function SetCarToCompare(el, carClass) {
     if (carClass instanceof Car) {
@@ -78,34 +65,30 @@ function HideCompare() {
 }
 
 function UpdateCompareTable() {
-    let table = document.getElementById("compareTable");
-    // let tableBody = table.getElementById("compare-table")[0];
-    tableBody.innerHTML = "";
-
-    for (let i = 0; i < carArr.length; i++) {
-        let car = carArr[i];
-        let row = tableBody.insertRow(i);
-        let cell = row.insertCell(0);
-        cell.innerHTML = car.nome;
-        cell = row.insertCell(1);
-        cell.innerHTML = car.preco;
-        cell = row.insertCell(2);
-        cell.innerHTML = car.alturaCacamba;
-        cell = row.insertCell(3);
-        cell.innerHTML = car.alturaVeiculo;
-        cell = row.insertCell(4);
-        cell.innerHTML = car.alturaSolo;
-        cell = row.insertCell(5);
-        cell.innerHTML = car.capacidadeCarga;
-        cell = row.insertCell(6);
-        cell.innerHTML = car.motor;
-        cell = row.insertCell(7);
-        cell.innerHTML = car.potencia;
-        cell = row.insertCell(8);
-        cell.innerHTML = car.volumeCacamba;
-        cell = row.insertCell(9);
-        cell.innerHTML = car.roda;
-        cell = row.insertCell(10);
-        cell.innerHTML = "<img src='" + car.image + "' />";
+   for (let i = 0; i < carArr.length; i++) {
+        let carroAtual = carArr[i];
+        document.getElementById("compare_image_"+i).innerHTML = `<img src="${carroAtual.image}">`;
+        document.getElementById("compare_modelo_"+i).innerHTML = carroAtual.nome;
+        document.getElementById("compare_alturacacamba_"+i).innerHTML = carroAtual.alturaCacamba;
+        document.getElementById("compare_alturaveiculo_"+i).innerHTML = carroAtual.alturaVeiculo;
+        document.getElementById("compare_alturasolo_"+i).innerHTML = carroAtual.alturaSolo;
+        document.getElementById("compare_capacidadecarga_"+i).innerHTML = carroAtual.capacidadeCarga;
+        document.getElementById("compare_motor_"+i).innerHTML = carroAtual.motor;
+        document.getElementById("compare_potencia_"+i).innerHTML = carroAtual.potencia;
+        document.getElementById("compare_volumecacamba_"+i).innerHTML = carroAtual.volumeCacamba;
+        document.getElementById("compare_roda_"+i).innerHTML = carroAtual.roda;
+        document.getElementById("compare_preco_"+i).innerHTML = carroAtual.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     }
 }
+
+
+// compare_modelo_
+// compare_alturacacamba_
+// compare_alturaveiculo_
+// compare_alturasolo_
+// compare_capacidadecarga_
+// compare_motor_
+// compare_potencia_
+// compare_volumecacamba_
+// compare_roda_
+// compare_preco_
