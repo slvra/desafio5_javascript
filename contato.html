@@ -8,6 +8,9 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
+
     <script src="js/form.js"></script>
 </head>
 <body>
@@ -37,21 +40,35 @@
             </div>
             <div>
                 <h2 class="titulo">Sobre Você</h2>
-            <form onsubmit="Post(this);">
+            <form onsubmit="Post(this); return false;">
                 <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
-                <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
-                <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
-                <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
-                <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                <input type="email" name="email" placeholder="E-MAIL*" class="fordform" required>
+                <input type="tel" name="telefone" placeholder="TELEFONE*" class="fordform" required>
                 <select name="contato" class="fordform" required>
-                    <option selected>COMO DESEJA SER CONTATADO</option>
-                    <option>TELEFONE</option>
-                    <option>E-MAIL</option>
+                    <option selected disabled value="" >TIPO DE CONTATO</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="solicitacao">Solicitação</option>
                 </select>
-            <button type="submit">Enviar</button>
+                <textarea rows="5" name="mensagem" placeholder="MENSAGEM*" id="mensagem" class="fordform" required></textarea>
+            <button type="submit" class="form-button" >Enviar</button>
             </form>
             </div>
         </div>
+
+        <div id="consolidacao" style="display: none;">
+            <h3>Confira os dados digitados</h3>
+            <h4>
+                Nome: <span id="nome"></span><br>
+                Email: <span id="email"></span><br>
+                Telefone: <span id="telefone"></span><br>
+                Tipo de contato: <span id="contato"></span><br>
+                Mensagem: <span id="texto1"></span><br>
+            </h4>
+            <div style="text-align: center;padding-bottom: 20px;">
+                <button onclick="Enviar(this)"; type="button" style="height: 40px; width: 55px;">check</button>
+            </div> 
+        </div> 
     </main>
     <footer>
         <nav id="social">
@@ -65,6 +82,7 @@
         <div>
            <img src="img/ford-96.png" width="70"  />
         </div>
-    </footer>    
+    </footer>  
+ 
 </body>
 </html>

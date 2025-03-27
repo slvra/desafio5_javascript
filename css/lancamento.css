@@ -87,12 +87,3 @@ div#compare {
     -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
     box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
 }
-
-@media screen and (max-width: 1000px) {
-    div#compare {
-        width: 80vw;
-        left: 10vw;
-        font-size: small;
-    }
-    
-}
