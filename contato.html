@@ -57,16 +57,33 @@
         </div>
 
         <div id="consolidacao" style="display: none;">
-            <h3>Confira os dados digitados</h3>
-            <h4>
-                Nome: <span id="nome"></span><br>
-                Email: <span id="email"></span><br>
-                Telefone: <span id="telefone"></span><br>
-                Tipo de contato: <span id="contato"></span><br>
-                Mensagem: <span id="texto1"></span><br>
-            </h4>
+        <h3 id="h3-title">Confira os dados digitados</h3>
+            <table>
+                <tr>
+                    <td>NOME</td>
+                    <td><span id="nome"></span></td>
+                </tr>
+                <tr>
+                    <td>E-MAIL</td>
+                    <td><span id="email"></span></td>
+                </tr>
+                <tr>
+                    <td>TELEFONE</td>
+                    <td><span id="telefone"></span></td>
+                </tr>
+                <tr>
+                    <td>TIPO DE CONTATO</td>
+                    <td><span id="contato"></span></td>
+                </tr>
+                <tr>
+                    <td>MENSAGEM</td>
+                    <td><span id="texto1"></span></td>
+                </tr>
+
+            </table>
+
             <div style="text-align: center;padding-bottom: 20px;">
-                <button onclick="Enviar(this)"; type="button" style="height: 40px; width: 55px;">check</button>
+                <button id="consolidacao-button" onclick="Enviar(this)"; type="button" style="height: 40px; width: 55px;">check</button>
             </div> 
         </div> 
     </main>

@@ -85,7 +85,40 @@ textarea{
     background-color: #ffffff;
     text-align: center;
     align-items: center;
-    border-radius: 20px;
-    width: 15vw;
-    height: 150px;
+    border-radius: 11px;
+    width: 17vw;
+    height: fit-content;
+    padding: 0;
+}
+
+#h3-title{
+    
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5%;
+}
+
+table{
+    width: 85%;
+    border-collapse: collapse;
+    margin: auto;
+}
+td{
+    background-color: #ffffff;
+    text-align: left;
+    padding: 5px;
+    border: #757373 1px solid;
+}
+
+#consolidacao-button{
+
+    margin: 0;
+    padding: 0;
+    background-color: #1351d8;
+    color: white;
+
+    border: none;
+    cursor: pointer;
+    font: 16px;
+    border-radius: 10px;
 }
