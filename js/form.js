@@ -41,3 +41,7 @@ function Enviar() {
     }
 
 }
+
+function Hide() {
+    document.getElementById("consolidacao").style.display = "none";
+}

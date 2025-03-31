@@ -38,52 +38,69 @@
             height: 500px;" src="https://www.youtube-nocookie.com/embed/vQsryuNmsL0?controls=0&autoplay=1&modestbranding=0&loop=1&mute=1&rel=0&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="texto">
-            <p>Conheça a nova linha de picapes <strong>Ford</strong>. São três modelos para atender a todas as necessidades de transporte de carga. A linha de picapes <strong>Ford</strong> é a mais completa do mercado, com modelos que vão desde o XL Cabine Simples 2.2 Diesel 4X4 MT 2022 até o Storm 3.2 Diesel 4X4 AT 2022. Confira abaixo as especificações de cada modelo e escolha o que melhor atende a sua necessidade.</p>
+            <p id="escrever" ></p>
+            <script>
+                var i = 0;
+                var ford = 'Ford';
+                var txt = 'Conheça a nova linha de picapes Ford. São três modelos para atender a todas as necessidades de transporte de carga. A linha de picapes Ford é a mais completa do mercado, com modelos que vão desde o XL Cabine Simples 2.2 Diesel 4X4 MT 2022 até o Storm 3.2 Diesel 4X4 AT 2022. Confira abaixo as especificações de cada modelo e escolha o que melhor atende a sua necessidade.';
+                var speed = 20;
+                
+                function typeWriter() {
+                  if (i < txt.length) {
+                    document.getElementById("escrever").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+                window.addEventListener('load', typeWriter);
+                
+                
+                </script>
         </div>
         <div>
             <ul class="modelcars">
                 <li> 
-                    <img src="img/XL Cabine.jpg" class="photocar">
+                    <img  src="img/XL Cabine.jpg" class="photocar img1">
                     <div class="infocar">
                         <div>
-                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 'img/XL Cabine.jpg'));">
+                            <input type="checkbox" value="car1" class="checkbox img1" onchange="SetCarToCompare(this, new Car('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 'img/XL Cabine.jpg'));">
                         </div>
-                        <div class="info">
-                            <span class="textmodel">XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
-                            <span class="textprice">Preço Sugerido: R$ 183.850</span>
+                        <div class="info img1">
+                            <span class="textmodel img1">XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
+                            <span class="textprice img1">Preço Sugerido: R$ 183.850</span>
                         </div>
                         <div>
-                            <img src="img/info.png">
+                            <img class="img1" src="img/info.png">
                         </div>
                     </div>
                 </li>
                 <li>
-                    <img src="img/xls 2.2 diesel.jpg" class="photocar">
+                    <img  src="img/xls 2.2 diesel.jpg" class="photocar img2">
                     <div class="infocar">
                         <div>
-                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 'img/xls 2.2 diesel.jpg'));">
+                            <input type="checkbox" value="car1" class="checkbox img2" onchange="SetCarToCompare(this, new Car('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 'img/xls 2.2 diesel.jpg'));">
                         </div>
                         <div class="info">
-                            <span class="textmodel">XLS 2.2 Diesel 4X4 AT 2022</span>
-                            <span class="textprice">Preço Sugerido: R$ 220.690</span>
+                            <span class="textmodel img2">XLS 2.2 Diesel 4X4 AT 2022</span>
+                            <span class="textprice img2">Preço Sugerido: R$ 220.690</span>
                         </div>
                         <div>
-                            <img src="img/info.png">
+                            <img  class="img2" src="img/info.png">
                         </div>
                     </div>
                 </li>
                 <li>
-                    <img src="img/storm.jpg" class="photocar">
+                    <img  src="img/storm.jpg" class="photocar img3">
                     <div class="infocar">
                         <div>
-                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('Storm 3.2 Diesel 4X4 AT 2022', 222790, 511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 'img/storm.jpg'));">
+                            <input type="checkbox" value="car1" class="checkbox img3" onchange="SetCarToCompare(this, new Car('Storm 3.2 Diesel 4X4 AT 2022', 222790, 511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 'img/storm.jpg'));">
                         </div>
                         <div class="info">
-                            <span class="textmodel">Storm 3.2 Diesel 4X4 AT 2022</span>
-                            <span class="textprice">Preço Sugerido: R$ 222.790</span>
+                            <span class="textmodel img3">Storm 3.2 Diesel 4X4 AT 2022</span>
+                            <span class="textprice img3">Preço Sugerido: R$ 222.790</span>
                         </div>
                         <div>
-                            <img src="img/info.png">
+                            <img class="img3" src="img/info.png">
                         </div>
                     </div>
                 </li>

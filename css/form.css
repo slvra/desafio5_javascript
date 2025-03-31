@@ -99,6 +99,7 @@ textarea{
 }
 
 table{
+    max-width: 90%;
     width: 85%;
     border-collapse: collapse;
     margin: auto;
@@ -111,14 +112,26 @@ td{
 }
 
 #consolidacao-button{
-
-    margin: 0;
+    width: fit-content;
+    margin: 2;
     padding: 0;
-    background-color: #1351d8;
-    color: white;
-
+    background-color: #ffffff;
+    color: dimgray;
     border: none;
+    border: #092c78 solid 1px;
+    box-shadow: #092c78 1px 1px 1px;
     cursor: pointer;
     font: 16px;
     border-radius: 10px;
+}
+
+#consolidacao-button:hover{
+    background-color: #1351d8;
+    color: white;
+
+}
+
+
+.w-6 h-6 text-gray-800 dark:text-white{
+    margin: 0;
 }
