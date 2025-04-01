@@ -85,10 +85,11 @@ textarea{
     background-color: #ffffff;
     text-align: center;
     align-items: center;
-    border-radius: 11px;
+    border-radius: 15px;
     width: 17vw;
     height: fit-content;
     padding: 0;
+    box-shadow: #b8b3b3 1px 1px 1px;
 }
 
 #h3-title{
@@ -103,12 +104,18 @@ table{
     width: 85%;
     border-collapse: collapse;
     margin: auto;
+    border-radius: 5px;
+
+
 }
+
 td{
     background-color: #ffffff;
     text-align: left;
-    padding: 5px;
-    border: #757373 1px solid;
+    padding: 7px;
+    border: #dcdada 1px solid;
+
+
 }
 
 #consolidacao-button{
@@ -118,19 +125,16 @@ td{
     background-color: #ffffff;
     color: dimgray;
     border: none;
-    border: #092c78 solid 1px;
+    border: #143e99 solid 1px;
     box-shadow: #092c78 1px 1px 1px;
     cursor: pointer;
     font: 16px;
-    border-radius: 10px;
 }
 
-#consolidacao-button:hover{
+#consolidacao-button:hover {
     background-color: #1351d8;
     color: white;
-
 }
-
 
 .w-6 h-6 text-gray-800 dark:text-white{
     margin: 0;

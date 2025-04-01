@@ -74,8 +74,8 @@ div#compare {
     position: fixed; /* manter na tela quando srola */
     display: none;
     width: 50vw;
-    max-width: 700px;
-    min-width: 400px;
+    max-width: 95vw;
+    /* min-width: 95vw; */
     height: 80vh;
     max-height: 550px;
     min-height: 350px;
@@ -91,14 +91,15 @@ div#compare {
 
 #texto p {
     display: inline-block;
-    border:#1351d8 solid 1px;
-    background-color: #1b357e;
-    color: white;
+    border:#1b357e solid 1px;
+    background-color: #ffffff;
+    box-shadow: #1b357e 1px 1px 1px;
+    color: rgb(0, 0, 0);
     font-weight: 500;
     font-size: 14px;
     border-radius: 10px;
     padding: 1rem;;
-    max-width: 494px;
+    max-width: 1005px;
     text-align: justify;
     cursor: default;
     transition: scale 1.5s cubic-bezier(0.3, 0.2, 0.2, 1.4);
@@ -108,7 +109,7 @@ div#compare {
 }
 
 #texto p:hover {
-    scale: 1.3;
+    scale: 1.1;
     strong{
         font-weight: 600px;
     }
