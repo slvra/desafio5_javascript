@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
     #carousel a img{
         position: relative;
         max-width: 10vw;
@@ -13,18 +13,45 @@
     header div img{
         width: 70px;
     }
-    header nav{
-        position: absolute;
-        scale: 0.6;
+    header{
+        display: flex;
+        align-items: center;
+
+    }
+    header li{
+        font-size: .75rem;        
         left: 50%;
-        top: 50;
+        top: 50%;
         transform: translate(-50%, -50%);
     }
-    div#compare {
-        width: 80vw;
-        
-        font-size: small;
+    header nav a{
+        font-size: 0.75rem;
     }
+    div#compare {
+        width: 90vw;
+        height: max-content;
+        max-height: 80vh;
+        font-size: .75rem;
+        button{
+            width: 10px
+        }
+    }
+
+
+    #compare table {
+        font-size: small;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+        margin-bottom: 10px;
+    }
+
+    #compare table th, #compare table td {
+        text-align: left;
+        padding: 4px;
+    }
+
     .form-button {
         width: 22%;
     }
