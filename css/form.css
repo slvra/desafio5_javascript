@@ -119,9 +119,9 @@ td{
 
 }
 
-#consolidacao-button{
+#consolidacao-button-chek, #consolidacao-button-exit{
     width: fit-content;
-    margin: 2;
+    margin: 2; /* precisa tirar?*/
     padding: 0;
     background-color: #ffffff;
     color: dimgray;
@@ -129,10 +129,10 @@ td{
     border: #143e99 solid 1px;
     box-shadow: #092c78 1px 1px 1px;
     cursor: pointer;
-    font: 16px;
+    font: 16px; /* precisa tirar?*/
 }
 
-#consolidacao-button:hover {
+#consolidacao-button-chek, #consolidacao-button-exit:hover {
     background-color: #1351d8;
     color: white;
 }
